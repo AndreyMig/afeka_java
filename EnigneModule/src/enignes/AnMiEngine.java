@@ -3,24 +3,18 @@ package enignes;
 public class AnMiEngine {
 
 	private int speed = 0;
-	
-	
-	public void incSpeed(){
-		
-		speed = speed*2;
-		
+
+	public void speedUp() {
+		speed++;
 	}
-	
-	public void decSpeed(){
-		
-		speed = speed/2;
-		
+
+	public void slowDown() {
+		speed--;
 	}
-	
-	
+
 	@Override
 	public String toString() {
 		return "current speed: " + speed;
 	}
-	
+
 }
